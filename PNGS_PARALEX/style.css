@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit&family=Rubik+Glitch&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    box-shadow: inset;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em ;
+    color: black;
+    pointer-events:none;
+    font-weight: bold;
+    margin-right: 400px;
+    cursor: none;
+}
+
+.navbar a{
+    /* text-decoration: none; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    padding:6px 15px ;
+    border-radius: 20px;
+    margin: 0px 10px;
+    font-size: x-large;
+    /* font-weight: bold; */
+}
+
+.navbar a:hover{
+   background: rgb(0, 0, 0);
+    color: white;
+}
+
+#text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    position: absolute;
+    font-size: 13em;
+    padding-top: 30px;
+    font-weight: lighter;
+    text-shadow: 120px 120px 140px rgba(0, 0, 0, 0.2);
+}
+
+.paralax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(114, 111, 111),rgb(0,0,0,1));
+
+}
+.paralax img{
+    position: absolute;
+    top:0;
+    left:0;
+    pointer-events: none;
+
+}
+
+#Left_side{
+    padding: 200px 0px;
+    width: 60%;
+    margin-left:-30px ;
+}
+
+#right_side{
+    padding-top: 250px;
+    padding-bottom: 0px;
+    padding-left: 600px;
+    padding-right: 200px;
+    margin-left: 390px;
+    width: 95%;
+}
+
+#in_middle_1{
+    padding: 200px 8px;
+    width: 40%;
+    margin-left:150px ;
+}
+#in_middle_2{
+    padding: 200px 8px;
+    width: 36.5%;
+    margin-left:450px ;
+}
+#in_middle_3{
+    padding: 200px 8px;
+    width: 46.7%;
+    margin-left:450px ;
+}
+#in_middle_4{
+    padding: 200px 8px;
+    width: 34.8%;
+    margin-left:900px ;
+}
+
+.sec{
+    position: relative;
+    background: rgb(0, 0, 0,1);
+    padding: 100px;
+    display: flex;
+
+}
+
+.sec h2{
+    color: white;
+    font-size: 5em;
+    font-family:'Bebas Neue' ;
+}
+
+.sec p{
+    color: white;
+    font-family:'Kanit' ;
+    font-size: 1.6em;
+    padding-right: 20px;
+}
+
+.about_img img{
+    position: relative;
+    display: flex;
+    width: 500%;
+    border-radius: 30px;
+}
+.about_img{
+    padding-right: 400px;   
+}
+
+.sec2{
+    position: relative;
+    background: rgb(0, 0, 0,1);
+    padding: 100px;
+}
+
+.sec2 h2{
+    color: white;
+    font-size: 5em;
+    font-family:'Bebas Neue' ;
+    margin-left: 500px;
+}
+
+.imgSlider{
+    width: 100%;
+    height: 800px;
+    background-image: url(PNGS_PARALEX/transformation\ 1.jpg);
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px;
+    border-radius: 20px;
+    animation: changeImg 20s linear infinite;
+}
+
+@keyframes changeImg {
+    0%{
+        background-image: url(PNGS_PARALEX/transformation\ 1.jpg);
+    }
+    25%{
+        background-image: url(PNGS_PARALEX/transformation\ 2.jpg);
+    }
+    50%{
+        background-image: url(PNGS_PARALEX/transformation\ 3.jpg);
+    }
+    75%{
+        background-image: url(PNGS_PARALEX/transformation\ 4.jpg);
+    }
+    100%{
+        background-image: url(PNGS_PARALEX/transformation\ 1.jpg);
+    }
+    
+}
+
+.sec3{
+    position: relative;
+    background: rgb(0, 0, 0,1);
+    padding: 100px;
+}
+
+.sec3 h2{
+    color: white;
+    font-size: 5em;
+    font-family:'Bebas Neue' ;
+    margin-left: 500px;
+}
+
+.review1{
+    display: flex;
+}
+
+.review1 img{
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 300px;
+}
+
+.review1 h3{
+    padding-top: 90px;
+    padding-left: 90px;
+    font-family:'Bebas Neue' ;
+    color: white;
+    font-size: 3em;
+    
+}
+
+.review2{
+    padding-top: 30px;
+    display: flex;
+}
+
+.review2 img{
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 300px;
+}
+
+.review2 h3{
+    padding-top: 90px;
+    padding-left: 90px;
+    font-family:'Bebas Neue' ;
+    color: white;
+    font-size: 3em;
+    
+}
+
+.review3{
+    padding-top: 30px;
+    display: flex;
+}
+
+.review3 img{
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 300px;
+}
+
+.review3 h3{
+    padding-top: 90px;
+    padding-left: 90px;
+    font-family:'Bebas Neue' ;
+    color: white;
+    font-size: 3em;
+    
+}
+
+.sec4{
+    position: relative;
+    background: rgb(0, 0, 0,1);
+    padding: 100px;
+}
+
+.sec4 h2{
+    color: white;
+    font-size: 5em;
+    font-family:'Bebas Neue' ;
+    margin-left: 650px;
+}
+
+.form input{
+    width: 60%;
+    margin: 30px 300px;
+    font-size: 30px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding:5px 3px;
+
+}
+
+.form button{
+    padding: 8px 20px;
+    margin: 30px 750px;
+    background:none;
+    font-size: 20px;
+    color: white;
+    border:2px solid white;
+    border-radius: 70px;
+    cursor: pointer;
+}
+
+.footer{
+    background: black;
+}
+
+.Footer_text{
+    color: white;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    padding-left: 740px;
+    font-size: 2em;
+    font-family: Kanit;
+}
